@@ -203,17 +203,5 @@ int main(){
         else
             print_info(root, key);
     }
-    
-
-
-
-    // for (int i=0;i<n;i++)
-    //     printf("\n%d", pre[i]);
-    // printf("Inorder traversal of the constructed tree: \n");
-	// printInorder(root);
-
-
-
     return 0;
 }
-

@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <assert.h>
-// #define ll long long
 
 void quicksort(int a[], int l, int r, int *swaps);
 int partition(int a[], int l, int r, int *swaps);
