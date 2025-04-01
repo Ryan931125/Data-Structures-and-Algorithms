@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include <stdbool.h>
 #include <assert.h>
-// #define ll long long
 
 int heapsize=0;
 void max_heap_insert(int a[], int key);
@@ -49,5 +48,3 @@ void swap(int arr[], int a, int b){
     arr[b]=temp;
     return;
 }
-
-

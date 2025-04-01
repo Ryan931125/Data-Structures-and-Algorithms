@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
-//#define int long long
 
 int Get_Min_Index(int a[], int l, int r){
     int m = l; // store current min. index
@@ -27,13 +26,6 @@ int Selection_Sort(int a[],int len,int budget){
     }
     return swaps; // which has been sorted in place
 }
-
-// bool check_if_sorted(int a[],int len){
-//     for (int i=0;i<len-1;i++)
-//         if (a[i]>a[i+1])
-//             return false;
-//     return true;
-// }
 
 signed main(){
     int n,m;

@@ -3,17 +3,10 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
-// #define int long long
 
 int moves=0;
 
 void insert(int a[], int m, int n){
-    
-    // for (int i=0;i<n;i++)
-    //     printf("%d ",a[i]);
-    // printf("\n");
-
-
     int data=a[m];
     int i=m-1;
     while (i>=0&&a[i]>data&&moves>0){
@@ -38,9 +31,6 @@ int main(){
     int a[n];
     for (int i=0;i<n;i++)
         scanf("%d",&a[i]);
-    // for (int i=0;i<n;i++)
-    //     printf("%d ",a[i]);
-    // printf("\n");
     Insertion_sort(a,n);
 
     printf("The array is ");

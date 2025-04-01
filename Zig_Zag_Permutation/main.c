@@ -12,11 +12,9 @@ bool check(int nums[],int n){
 }
 
 void beauty(int n,int nums[],int on,int answers[200000][n],int *count,int cur[]){
-    // printf("hi\n");
     if (!check(cur,on))
         return;
     if (on==n){
-        // printf("ho\n");
         bool same=true;
         for (int i=0;i<n;i++)
             if (*count==0||cur[i]!=answers[*count-1][i]){
@@ -60,16 +58,6 @@ signed main(){
                 nums[j+1]=temp;
             }
 
-    //setting up skip
-    // int repeats[n],skip=1;
-    // for (int i=0;i<n;i++)
-    //     repeats[i]=1;
-    // for (int i=1;i<n;i++)
-    //     if (nums[i]==nums[i-1])
-    //         repeats[i]+=repeats[i-1];
-    // for (int i=0;i<n;i++)
-    //     skip*=repeats[i];
-
     //finding if legal
     int most=0,temp=1,half=(n+1)/2;
     for (int i=1;i<n;i++){
@@ -85,7 +73,6 @@ signed main(){
         printf("0\n");
         exit(0);
     }
-    // printf("%d\n",skip);
     
     int answers[200000][n],cur[n],count=0;
     beauty(n,nums,0,answers,&count,cur);
@@ -98,8 +85,3 @@ signed main(){
     }
     return 0;
 }
-
-
-//check function, run every time
-//遞迴填入所有數字 如果on第一第二個就直接繼續填，執行check(在最後三個數字就好)，如果on最後一個答案就加一
-//不然就也繼續填

@@ -86,8 +86,6 @@ signed main(){
 
     //for operation 5
     int t_start=1, t_end=1;
-    //remember to change
-
 
     for (int i=0;i<1000005;i++){
         treasures[i].found_at_dungeon=-1;
@@ -136,7 +134,6 @@ signed main(){
             else{
                 int previous_dungeon=location;
 
-                //here1
                 if (treasures[t_end-1].found_at_dungeon==location)
                     t_end--;
 
@@ -158,7 +155,6 @@ signed main(){
                     dungeons[location]->max_deep_tail=dungeons[location]->max_deep_head;
 
                 //change treasure place
-                //here2
                 if (treasures[t_end-1].found_at_dungeon>location)
                     treasures[t_end-1].found_at_dungeon=location;
             }
@@ -232,7 +228,6 @@ signed main(){
         }
 
     }
-    // printf("hea ptr:%p, tail ptr:%p\n", dungeons[2]->downstream_head,dungeons[2]->downstream_tail);
     return 0;
 }
 

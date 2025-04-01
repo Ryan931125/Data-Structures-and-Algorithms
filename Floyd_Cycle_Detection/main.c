@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
-// #define int long long
 
 typedef struct node{
     int data;
@@ -52,10 +51,6 @@ int main(){
             nodes[i]->next=nodes[nexts[i]];
     }
     Node *temp=nodes[0];
-    // for (int i=0;i<n;i++){
-    //     printf("%d ",temp->data);
-    //     temp=temp->next;
-    // }
     floyd_cycle_detection(temp);
 }
 

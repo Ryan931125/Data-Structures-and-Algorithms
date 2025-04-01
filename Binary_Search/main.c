@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include <assert.h>
-// #define int long long
 
 void binary_search(int a[],int key,int l,int r){
     printf("Searching %d in range [%d, %d].\n",key,l+1,r+1);

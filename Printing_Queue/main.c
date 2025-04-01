@@ -5,11 +5,6 @@
 #include <stdbool.h>
 #include <assert.h>
 
-//add BinomialHeapInsert
-//print BinomialHeapExtractMax
-//move H2=BinomialHeapUnion(H1, H2), H1=makeheap
-//輸出都在函式裡面處理
-
 typedef struct tree{
     struct tree *next;
     struct tree *child;
@@ -78,9 +73,6 @@ int main(){
         }
         }
     }
-    // printf("job_id: %d, priority: %d, order: %d\n",printers[2]->head->id, printers[2]->head->priority, printers[2]->head->order);
-    // printf("job_id: %d, priority: %d, order: %d\n",printers[2]->head->child->id, printers[2]->head->child->priority, printers[2]->head->child->order);
-
     return 0;
 }
 
@@ -178,8 +170,6 @@ Heap *BinomialHeapUnion(Heap *h1, Heap *h2){
         }
         nextone=x->next;
     }
-    //free(h1);
-    //free(h2);?
     return H;
 }
 
@@ -198,7 +188,6 @@ Tree *reverse(Tree *t){
         prev=curr;
         curr=next;
     }
-    // printf("now: %d\n",prev->id);
     return prev;
 }
 

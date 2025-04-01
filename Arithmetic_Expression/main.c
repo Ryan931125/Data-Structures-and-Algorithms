@@ -124,13 +124,6 @@ signed main(){
         printf("=");
         printf("%lld",postfix_eval(postfix,numbers));
         printf("\n");
-        // printf("%s\n",postfix);
-        // int k=0;
-        // while (numbers[k]!=(ll int)0){
-        //     printf("%d ",(int)numbers[k]);
-        //     k++;
-        // }
-        // printf("\n");
     }
 }
 
